@@ -1,0 +1,8 @@
+<h1>User Names</h1>
+<ul>
+  <% @users.each do |name| %>
+    <li>
+      <a href="/user/<%= name %>"><%= name.capitalize %></a>
+    </li>
+  <% end %>
+</ul>
